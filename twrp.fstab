@@ -1,0 +1,10 @@
+/boot          emmc      /dev/block/platform/sdhci-tegra.3/by-name/LNX
+/recovery      emmc      /dev/block/platform/sdhci-tegra.3/by-name/SOS
+/vendor        ext4      /dev/block/platform/sdhci-tegra.3/by-name/VNR      flags=display="Vendor";backup=1
+/misc          ext4      /dev/block/platform/sdhci-tegra.3/by-name/MSC      flags=display="MISC";backup=1
+/persistent    ext4      /dev/block/platform/sdhci-tegra.3/by-name/PST      flags=display="Persistent";backup=1
+/system        ext4      /dev/block/platform/sdhci-tegra.3/by-name/APP
+/data          ext4      /dev/block/platform/sdhci-tegra.3/by-name/UDA      length=-16384
+/cache         ext4      /dev/block/platform/sdhci-tegra.3/by-name/CAC
+#/external_sd   vfat      /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=display="Micro SDcard";storage;wipeingui;removable
+/usbstorage	   vfat		 /dev/block/sda1	/dev/block/sda					  flags=display="USB Storage";storage;removable

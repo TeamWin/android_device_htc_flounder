@@ -37,7 +37,7 @@ endif
 LOCAL_FSTAB := $(LOCAL_PATH)/fstab.flounder
 
 
-TARGET_RECOVERY_FSTAB = $(LOCAL_FSTAB)
+TARGET_RECOVERY_FSTAB = device/htc/flounder/twrp.fstab
 
 PRODUCT_COPY_FILES := \
     $(LOCAL_KERNEL):kernel \
