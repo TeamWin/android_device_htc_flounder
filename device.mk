@@ -24,7 +24,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 ifeq ($(USE_SVELTE_KERNEL), true)
 LOCAL_KERNEL := device/htc/flounder_svelte-kernel/Image.gz-dtb
 else
-LOCAL_KERNEL := device/htc/flounder-kernel/Image.gz-dtb
+LOCAL_KERNEL := device/htc/flounder/kernel
 endif # USE_SVELTE_KERNEL
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
