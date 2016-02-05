@@ -1,12 +1,15 @@
 /boot          emmc      /dev/block/platform/sdhci-tegra.3/by-name/LNX
 /recovery      emmc      /dev/block/platform/sdhci-tegra.3/by-name/SOS
 /vendor        ext4      /dev/block/platform/sdhci-tegra.3/by-name/VNR      flags=display="Vendor";backup=1;mounttodecrypt
+/vendor_image  emmc      /dev/block/platform/sdhci-tegra.3/by-name/VNR      flags=flashimg=1
 /misc          emmc      /dev/block/platform/sdhci-tegra.3/by-name/MSC      flags=display="MISC"
 /persistent    emmc      /dev/block/platform/sdhci-tegra.3/by-name/PST      flags=display="Persistent"
 /system        ext4      /dev/block/platform/sdhci-tegra.3/by-name/APP
+/system_image  emmc      /dev/block/platform/sdhci-tegra.3/by-name/APP      flags=flashimg=1
 /data          ext4      /dev/block/platform/sdhci-tegra.3/by-name/UDA      flags=forceencrypt=/dev/block/platform/sdhci-tegra.3/by-name/MD1
 /cache         ext4      /dev/block/platform/sdhci-tegra.3/by-name/CAC
-/external_sd   vfat      /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=display="Micro SDcard";storage;wipeingui;removable
+
+# Removable storage
 /usbstorage	   vfat		 /dev/block/sda1	/dev/block/sda					  flags=display="USB Storage";storage;removable
 
 

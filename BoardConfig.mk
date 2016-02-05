@@ -130,15 +130,12 @@ MALLOC_IMPL := dlmalloc
 -include vendor/htc/flounder/BoardConfigVendor.mk
 
 # TWRP
-TW_INCLUDE_L_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 DEVICE_RESOLUTION := 1200x1920
 #TW_X_OFFSET := 168
 #TW_Y_OFFSET := 64
-RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_INCLUDE_NTFS_3G := true
 TARGET_RECOVERY_DEVICE_MODULES := libc++ libkeymaster_messages
-TW_RECOVERY_ADDITIONAL_RELINK_FILES := $(OUT)/system/lib64/libkeymaster_messages.so $(OUT)/system/lib64/libc++.so
-#TW_RECOVERY_ADDITIONAL_RELINK_FILES := out/target/product/flounder/system/lib64/libc++.so
+TW_RECOVERY_ADDITIONAL_RELINK_FILES := $(OUT)/system/lib64/libc++.so $(OUT)/system/lib64/libkeymaster_messages.so
 BOARD_SUPPRESS_SECURE_ERASE := true
