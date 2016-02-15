@@ -281,6 +281,6 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354
 $(call inherit-product-if-exists, vendor/htc/flounder/audio/lifevibes/lvve/device-vendor-lvve.mk)
 $(call inherit-product-if-exists, vendor/htc/flounder/audio/tfa/device-vendor-tfa.mk)
 
-# Add dependency of the proprietary keystore.flounder module.
-PRODUCT_PACKAGES += \
-    libkeymaster_messages
+# Time Zone data
+PRODUCT_COPY_FILES += \
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
