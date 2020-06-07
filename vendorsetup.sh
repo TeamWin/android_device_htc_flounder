@@ -15,3 +15,4 @@
 #
 
 add_lunch_combo aosp_flounder-userdebug
+export LC_ALL=C
